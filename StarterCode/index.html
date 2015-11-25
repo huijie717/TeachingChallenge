@@ -16,8 +16,8 @@
     
     <body>
       
-    <header>  
-            <nav>
+    <header role="banner">  
+            <nav role = "navigation">
                 <ul>
                     <li><a href="index.html#ThePNW">PNW</a></li>
                     <li><a href="index.html#Trails">Trails</a></li>
@@ -32,7 +32,7 @@
         </div>
     </header>
 
-        <main>
+        <main role="main">
             
             <div class="thePNW">
                 <a name="ThePNW"></a>
@@ -65,23 +65,32 @@
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 
                 <ul>
-                    <li><p>Rattlesnake Ridge</p><a href="http://www.highestbridges.com/wiki/index.php?title=Vance_Creek_Bridge">Explore</a></li>
+                    <li><p>Rattlesnake Ridge</p><a href="http://www.highestbridges.com/wiki/index.php?title=Vance_Creek_Bridge"aria-label="Explore Rattlesnake Ridge">Explore</a></li>
                 
                     <li><p>Vance Creek Bridge</p>
-                    <a href="http://www.gonorthwest.com/Washington/Activities/Hiking/rattlesnakeridge.htm">Explore</a></li>
+                    <a href="http://www.gonorthwest.com/Washington/Activities/Hiking/rattlesnakeridge.htm" aria-label="Explore Vance Creek ">Explore</a></li>
                 
                     <li><p>Snow Lake</p>
-                    <a href="http://www.wta.org/go-hiking/hikes/snow-lakes">Explore</a></li>
+                    <a href="http://www.wta.org/go-hiking/hikes/snow-lakes" aria-label="Explore Snow Lake">Explore</a></li>
                 </ul>
             </div>
 
             <div class="popularity">
                 <a name="Popularity"></a>
                     <h2>Popularity</h2>
-                    <img img/src="img/hikegraph.png">
+                    <img img/src="img/hikegraph.png" alt="" aria-describedat="#hike-popularity">
+
+                    <dl id="hikepopularity" hidden>
+                        <dt>Vance Creek</dt>                       
+                        <dt>50</dt>
+                        <dt>Rattlesnake Ridge</dt>
+                        <dt>100</dt>
+                        <dt>Snow Lake</dt>
+                        <dt>37</dt>
+                    </dl>
             </div>
 
-            <footer>
+            <footer role ="contentinfo">
                 <p>By Adriana Vining and Andrew Kyrios</p>
             </footer>
     </main>
